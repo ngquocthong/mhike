@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "528686220951",
+    "project_id": "tripiton-fe9c9",
+    "storage_bucket": "tripiton-fe9c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528686220951:android:4e3e52e95cfe555edf0bd2",
+        "android_client_info": {
+          "package_name": "com.example.trips1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528686220951-8e0g6v8899l7a5kf2en3cdlip2met5b5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trips1",
+            "certificate_hash": "d8e5f14395cedc185f01be3c0ce8d0f9c8092308"
+          }
+        },
+        {
+          "client_id": "528686220951-oef4h5mg8cii32vd9u7dvkavgm4tuncu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNsJ3HNOyPl9BbNlcEIGsYjrboxR_PZE4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "528686220951-oef4h5mg8cii32vd9u7dvkavgm4tuncu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "528686220951-g47q5577sc5lbgot022rdhr9cg9a1pt9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tripiton2"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
