@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # trips1
 
 A new Flutter project.
@@ -15,6 +14,3 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
-=======
-# trips11
->>>>>>> 5e4a26e795338b03efc5a20846985d11ad892666

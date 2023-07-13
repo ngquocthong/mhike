@@ -17,53 +17,56 @@ class _GroupState extends State<Group> {
       appBar: AppBar(
         title: const Text('Group'),
       ),
-      body: Column(
-        children: [
-          const SizedBox(
-            height: 100,
-            child: Center(
-              child: Text('Address'),
-            ),
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const CreateHike()),
-                  );
-                },
-                child: const Text('Create Hike'),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const Join()),
-                  );
-                },
-                child: const Text('Join Hike'),
-              ),
-            ],
-          ),
-          SizedBox(
-            height: 500,
-            child: Center(
-              child: OpenStreetMapSearchAndPick(
-                center: LatLong(23, 89),
-                buttonColor: Colors.blue,
-                buttonText: 'Set Current Location',
-                onPicked: (pickedData) {
-                  print(pickedData.latLong.latitude);
-                  print(pickedData.latLong.longitude);
-                  print(pickedData.address);
-                },
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const SizedBox(
+              height: 100,
+              child: Center(
+                child: Text('Address'),
               ),
             ),
-          ),
-        ],
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const CreateHike()),
+                    );
+                  },
+                  child: const Text('Create Hike'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Join()),
+                    );
+                  },
+                  child: const Text('Join Hike'),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 500,
+              child: Center(
+                child: OpenStreetMapSearchAndPick(
+                  center: LatLong(23, 89),
+                  buttonColor: Colors.blue,
+                  buttonText: 'Set Current Location',
+                  onPicked: (pickedData) {
+                    print(pickedData.latLong.latitude);
+                    print(pickedData.latLong.longitude);
+                    print(pickedData.address);
+                  },
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

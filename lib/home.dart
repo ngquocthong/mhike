@@ -35,15 +35,6 @@ class _MyHomeState extends State<MyHome> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  // IconButton(
-                  //   icon: const Icon(
-                  //     Icons.menu,
-                  //     color: Colors.white,
-                  //   ),
-                  //   onPressed: () {
-                  //     // Open menu
-                  //   },
-                  // ),
                   const SizedBox(
                     width: 30,
                   ),
@@ -75,30 +66,30 @@ class _MyHomeState extends State<MyHome> {
               ),
             ),
 
-            Padding(
-              padding: const EdgeInsets.fromLTRB(18, 20, 11, 0),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: TextFormField(
-                      autofocus: true,
-                      decoration: InputDecoration(
-                        suffixIcon: const Icon(
-                          Icons.search,
-                          color: Colors.black12,
-                        ),
-                        hintText: 'Search',
-                        hintStyle: const TextStyle(color: Colors.black),
-                        border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(25.7),
-                            borderSide:
-                                BorderSide(width: 20.0, color: Colors.black)),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
+            // Padding(
+            //   padding: const EdgeInsets.fromLTRB(18, 20, 11, 0),
+            //   child: Row(
+            //     children: [
+            //       Expanded(
+            //         child: TextFormField(
+            //           autofocus: true,
+            //           decoration: InputDecoration(
+            //             suffixIcon: const Icon(
+            //               Icons.search,
+            //               color: Colors.black12,
+            //             ),
+            //             hintText: 'Search',
+            //             hintStyle: const TextStyle(color: Colors.black),
+            //             border: OutlineInputBorder(
+            //                 borderRadius: BorderRadius.circular(25.7),
+            //                 borderSide:
+            //                     BorderSide(width: 20.0, color: Colors.black)),
+            //           ),
+            //         ),
+            //       ),
+            //     ],
+            //   ),
+            // ),
             const SizedBox(
               height: 30,
             ),

@@ -25,77 +25,83 @@ class _CaptureState extends State<Capture> {
         backgroundColor: Colors.green,
         title: const Text('Add Description & Images '),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Image.asset("assets/tripitonlogo.png"),
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: TextField(
-              controller: description,
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'Description',
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Image.asset("assets/tripitonlogo.png"),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: TextField(
+                controller: description,
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'Description',
+                ),
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: IconButton(
-              icon: const Icon(
-                Icons.camera_alt,
-                color: Colors.black,
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: IconButton(
+                icon: const Icon(
+                  Icons.camera_alt,
+                  color: Colors.black,
+                ),
+                onPressed: () async {
+                  // Open camera or gallery
+                  ImagePicker imagePicker = ImagePicker();
+                  XFile? file =
+                      await imagePicker.pickImage(source: ImageSource.gallery);
+                  print('${file?.path}');
+                  if (file == null) return;
+
+                  // Create unique file name
+                  String uniqueFileName =
+                      DateTime.now().millisecondsSinceEpoch.toString();
+
+                  // Upload image to Firebase
+                  Reference referenceRoot = FirebaseStorage.instance.ref();
+                  Reference referenceDirImages = referenceRoot.child('images');
+
+                  // Create reference for image to be stored in Firebase
+                  Reference referenceImageToUpload =
+                      referenceDirImages.child(uniqueFileName);
+                  SnackBar snackBar = const SnackBar(
+                    content: Text(
+                        'Description and Image added successfully\n\t\t\t\tNow Press Submit Button'),
+                  );
+                  ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                  try {
+                    // Store the file
+                    await referenceImageToUpload.putFile(File(file.path));
+                    imageUrl = await referenceImageToUpload.getDownloadURL();
+                  } catch (error) {
+                    print(error);
+                  }
+                },
               ),
-              onPressed: () async {
-                // Open camera or gallery
-                ImagePicker imagePicker = ImagePicker();
-                XFile? file =
-                    await imagePicker.pickImage(source: ImageSource.gallery);
-                print('${file?.path}');
-                if (file == null) return;
-
-                // Create unique file name
-                String uniqueFileName =
-                    DateTime.now().millisecondsSinceEpoch.toString();
-
-                // Upload image to Firebase
-                Reference referenceRoot = FirebaseStorage.instance.ref();
-                Reference referenceDirImages = referenceRoot.child('images');
-
-                // Create reference for image to be stored in Firebase
-                Reference referenceImageToUpload =
-                    referenceDirImages.child(uniqueFileName);
-
-                try {
-                  // Store the file
-                  await referenceImageToUpload.putFile(File(file.path));
-                  imageUrl = await referenceImageToUpload.getDownloadURL();
-                } catch (error) {
-                  print(error);
-                }
-              },
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: ElevatedButton(
-              onPressed: () async {
-                String descriptionText = description.text;
-                Map<String, String> data = {
-                  'description': descriptionText,
-                  'image': imageUrl,
-                };
-                _reference.add(data);
-              },
-              style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(
-                    vertical: 17.0, horizontal: 10.0),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: ElevatedButton(
+                onPressed: () async {
+                  String descriptionText = description.text;
+                  Map<String, String> data = {
+                    'description': descriptionText,
+                    'image': imageUrl,
+                  };
+                  _reference.add(data);
+                },
+                style: ElevatedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(
+                      vertical: 17.0, horizontal: 10.0),
+                ),
+                child: const Text('Submit'),
               ),
-              child: const Text('Submit'),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
