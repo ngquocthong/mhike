@@ -11,13 +11,42 @@ TripItOn is a Flutter application that allows users to create and join hikes, sh
 
 <h4>Discover Places:</h4> The home screen features a horizontal list view builder that showcases various places and cultural activities. Users can scroll through the list and explore different destinations, gaining inspiration for their next adventure.<br>
 
-| Signup                                              | Create Hike                                         |
-| --------------------------------------------------- | --------------------------------------------------- |
-| ![Signup](finalapp/screenshots/signup.jpg)          | ![Create Hike](finalapp/screenshots/createhike.jpg) |
-| ![Create Hike](finalapp/screenshots/createhike.jpg) | ![Create Hike](finalapp/screenshots/createhike.jpg) |
-| ![Create Hike](finalapp/screenshots/createhike.jpg) | ![Create Hike](finalapp/screenshots/createhike.jpg) |
-| ![Create Hike](finalapp/screenshots/createhike.jpg) | ![Create Hike](finalapp/screenshots/createhike.jpg) |
-| ![Create Hike](finalapp/screenshots/createhike.jpg) | ![Create Hike](finalapp/screenshots/createhike.jpg) |
+<table>
+  <tr>
+    <td align="center">
+      <img src="finalapp/screenshots/signup.jpg" alt="Signup" width="200">
+      <br>
+      Signup
+    </td>
+    <td align="center">
+      <img src="finalapp/screenshots/createhike.jpg" alt="Create Hike" width="200">
+      <br>
+      Create Hike
+    </td>
+    <td align="center">
+      <img src="finalapp/screenshots/createhike.jpg" alt="Create Hike" width="200">
+      <br>
+      Create Hike
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="finalapp/screenshots/createhike.jpg" alt="Create Hike" width="200">
+      <br>
+      Create Hike
+    </td>
+    <td align="center">
+      <img src="finalapp/screenshots/createhike.jpg" alt="Create Hike" width="200">
+      <br>
+      Create Hike
+    </td>
+    <td align="center">
+      <img src="finalapp/screenshots/createhike.jpg" alt="Create Hike" width="200">
+      <br>
+      Create Hike
+    </td>
+  </tr>
+</table>
 
 <h2>Getting Started</h2>
 To clone and run this project locally, follow these steps:
