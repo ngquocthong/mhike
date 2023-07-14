@@ -128,24 +128,6 @@ class MyRegister extends StatelessWidget {
                         textStyle: const TextStyle(
                             fontSize: 20, fontWeight: FontWeight.bold)),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const Text('Already have an account?',
-                          style: TextStyle(
-                              fontSize: 18, color: Color(0xff4c505b))),
-                      TextButton(
-                        onPressed: () {
-                          Navigator.pushNamed(context, 'login');
-                        },
-                        child: const Text('SIGN IN',
-                            style: TextStyle(
-                                decoration: TextDecoration.underline,
-                                fontSize: 18,
-                                color: Color(0xff4c505b))),
-                      ),
-                    ],
-                  )
                 ]),
               ),
             )
