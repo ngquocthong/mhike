@@ -106,7 +106,5 @@ Submit a pull request to the main repository.
 
 Please ensure that your contributions adhere to the code quality and style guidelines of the project.
 
-License
-This project is licensed under the MIT License.
-
-Feel free to explore, enhance, and customize TripItOn to suit your travel needs. Happy travels!
+##LICENSE
+[MIT LICENSE](LICENSE)
