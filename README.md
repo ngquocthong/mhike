@@ -107,6 +107,7 @@ Submit a pull request to the main repository.
 ##
 
 <h3>License</h3>
+
 This project is licensed under the [MIT LICENSE](LICENSE).
 Please ensure that your contributions adhere to the code quality and style guidelines of the project.
 
