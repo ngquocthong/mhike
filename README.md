@@ -1,4 +1,4 @@
-<h1>TripItOn<h1><br>
+<h1>TripItOn</h1><br>
 TripItOn is a Flutter application that allows users to create and join hikes, share their travel experiences, and discover new places. Whether you're going on a solo trip or looking for adventure buddies, TripItOn has got you covered.
 
 Features
