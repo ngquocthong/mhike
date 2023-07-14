@@ -104,7 +104,10 @@ Push your changes to your forked repository.
 
 Submit a pull request to the main repository.
 
+##
+
+License
+This project is licensed under the [MIT LICENSE](LICENSE).
 Please ensure that your contributions adhere to the code quality and style guidelines of the project.
 
-##LICENSE
-[MIT LICENSE](LICENSE)
+Feel free to explore, enhance, and customize TripItOn to suit your travel needs. Happy travels!
