@@ -10,7 +10,7 @@ TripItOn is a Flutter application that allows users to create and join hikes, sh
 <h4>Image Upload and Description:</h4> Users can upload images from their gallery or capture new ones using the camera. The images are stored in Firebase storage, and users can provide descriptions of the places or experiences associated with the images.<br>
 
 <h4>Discover Places:</h4> The home screen features a horizontal list view builder that showcases various places and cultural activities. Users can scroll through the list and explore different destinations, gaining inspiration for their next adventure.<br>
-
+<br><h1>Screenshots</h1>
 <table>
   <tr>
     <td align="center">
