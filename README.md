@@ -38,11 +38,14 @@ Fork the repository on GitHub.
 
 Create a new branch with a descriptive name:
 
-    git checkout -b feature/my-feature
+    git checkout -b descriptive_branch_name
 
 Make your changes and commit them with clear commit messages.
+git commit -m "Commit message"
 
 Push your changes to your forked repository.
+
+    git push origin descriptive_branch_name
 
 Submit a pull request to the main repository.
 
