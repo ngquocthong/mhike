@@ -1,16 +1,17 @@
 <h1>TripItOn</h1><br>
-TripItOn is a Flutter application that allows users to create and join hikes, share their travel experiences, and discover new places. Whether you're going on a solo trip or looking for adventure buddies, TripItOn has got you covered.
+TripItOn is a Flutter application that allows users to create and join hikes, share their travel experiences, and discover new places. Whether you're going on a solo trip or looking for adventure buddies, TripItOn has got you covered.<br><br>
 
-Features
-Create Hike: Users can create a hike by specifying the start and end locations, along with the date and time. The selected locations can be picked directly from the map, making it convenient and accurate.
+<u>Features</u><br>
 
-Join Hike (Under Development): The join hike feature is currently in development. Stay tuned for future updates!
+<h4>Create Hike</h4>: Users can create a hike by specifying the start and end locations, along with the date and time. The selected locations can be picked directly from the map, making it convenient and accurate.<br>
 
-Image Upload and Description: Users can upload images from their gallery or capture new ones using the camera. The images are stored in Firebase storage, and users can provide descriptions of the places or experiences associated with the images.
+<h4>Join Hike (Under Development)</h4>: The join hike feature is currently in development. Stay tuned for future updates!<br>
 
-Discover Places: The home screen features a horizontal list view builder that showcases various places and cultural activities. Users can scroll through the list and explore different destinations, gaining inspiration for their next adventure.
+<h4>Image Upload and Description</h4>: Users can upload images from their gallery or capture new ones using the camera. The images are stored in Firebase storage, and users can provide descriptions of the places or experiences associated with the images.<br>
 
-Getting Started
+<h4>Discover Places</h4>: The home screen features a horizontal list view builder that showcases various places and cultural activities. Users can scroll through the list and explore different destinations, gaining inspiration for their next adventure.<br>
+
+<h2>Getting Started</h2>
 To clone and run this project locally, follow these steps:
 
 Clone the repository:
