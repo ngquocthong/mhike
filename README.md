@@ -11,7 +11,13 @@ TripItOn is a Flutter application that allows users to create and join hikes, sh
 
 <h4>Discover Places:</h4> The home screen features a horizontal list view builder that showcases various places and cultural activities. Users can scroll through the list and explore different destinations, gaining inspiration for their next adventure.<br>
 
-![image1](finalapp/screenshots/createhike.jpg) "Home Screen"
+![Signup](finalapp/screenshots/signup.jpg) "Signup"
+![ceratehike](finalapp/screenshots/createhike.jpg) "Create Hike"
+![ceratehike](finalapp/screenshots/createhike.jpg) "Create Hike"
+![ceratehike](finalapp/screenshots/createhike.jpg) "Create Hike"
+![ceratehike](finalapp/screenshots/createhike.jpg) "Create Hike"
+![ceratehike](finalapp/screenshots/createhike.jpg) "Create Hike"
+![ceratehike](finalapp/screenshots/createhike.jpg) "Create Hike"
 
 <h2>Getting Started</h2>
 To clone and run this project locally, follow these steps:
