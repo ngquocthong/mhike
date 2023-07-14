@@ -19,24 +19,41 @@ TripItOn is a Flutter application that allows users to create and join hikes, sh
       Signup
     </td>
     <td align="center">
-      <img src="finalapp/screenshots/createhike.jpg" alt="Create Hike" width="200">
+      <img src="finalapp/screenshots/signinnill.jpg" alt="Signin blank" width="200">
       <br>
       Create Hike
     </td>
     <td align="center">
-      <img src="finalapp/screenshots/createhike.jpg" alt="Create Hike" width="200">
+      <img src="finalapp/screenshots/signin.jpg" alt="Signin" width="200">
       <br>
       Create Hike
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="finalapp/screenshots/createhike.jpg" alt="Create Hike" width="200">
+      <img src="finalapp/screenshots/homepage.jpg" alt="Create Hike" width="200">
       <br>
       Create Hike
     </td>
     <td align="center">
-      <img src="finalapp/screenshots/createhike.jpg" alt="Create Hike" width="200">
+      <img src="finalapp/screenshots/tajdescription.jpg" alt="Description Page" width="200">
+      <br>
+      Create Hike
+    </td>
+    <td align="center">
+      <img src="finalapp/screenshots/uploadimage.jpg" alt="Upload images" width="200">
+      <br>
+      Create Hike
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="finalapp/screenshots/groupspage.jpg" alt="Groups Page" width="200">
+      <br>
+      Create Hike
+    </td>
+    <td align="center">
+      <img src="finalapp/screenshots/joinhike.jpg" alt="Join Hike" width="200">
       <br>
       Create Hike
     </td>
