@@ -15,11 +15,11 @@ To clone and run this project locally, follow these steps:
 
 Clone the repository:
 
-    git clone https://github.com/<your-username>/TripItOn.git
+    git clone https://github.com/<your-username>/trips11.git
 
 Navigate to the project directory:
 
-    cd TripItOn
+    cd trips11
 
 Install dependencies:
 
@@ -29,9 +29,9 @@ Run the app:
 
     flutter run
 
-For more information on Flutter development, check out the official documentation for tutorials, samples, and a full API reference.
-
-Contributing
+<h2>For more information on Flutter development, check out the official documentation for tutorials, samples, and a full API reference.
+</h2>
+<h2><u>Contributing</u></h2>
 If you would like to contribute to TripItOn, follow these guidelines:
 
 Fork the repository on GitHub.
