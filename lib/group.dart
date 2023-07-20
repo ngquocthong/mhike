@@ -4,6 +4,7 @@ import 'package:trips1/createhike.dart';
 import 'package:trips1/join.dart';
 
 class Group extends StatefulWidget {
+  // ignore: use_key_in_widget_constructors
   const Group({Key? key});
 
   @override
@@ -58,9 +59,9 @@ class _GroupState extends State<Group> {
                   buttonColor: Colors.blue,
                   buttonText: 'Set Current Location',
                   onPicked: (pickedData) {
-                    print(pickedData.latLong.latitude);
-                    print(pickedData.latLong.longitude);
-                    print(pickedData.address);
+                    // print(pickedData.latLong.latitude);
+                    // print(pickedData.latLong.longitude);
+                    // print(pickedData.address);
                   },
                 ),
               ),
