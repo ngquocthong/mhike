@@ -2,17 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:trips1/description.dart';
 import 'package:trips1/group.dart';
 import 'capture.dart';
-import 'package:firebase_storage/firebase_storage.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class MyHome extends StatefulWidget {
+  const MyHome({super.key});
+
   @override
   State<MyHome> createState() => _MyHomeState();
 }
 
 class _MyHomeState extends State<MyHome> {
   String imageUrl = '';
-  final FirebaseStorage _storage = FirebaseStorage.instance;
+  // final FirebaseStorage _storage = FirebaseStorage.instance;
   final CollectionReference _placesReference =
       FirebaseFirestore.instance.collection('places');
   final CollectionReference _cultural =
@@ -29,16 +30,16 @@ class _MyHomeState extends State<MyHome> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(
+            const Padding(
+              padding: EdgeInsets.fromLTRB(
                   16, 40, 16, 8), // Adjust padding as needed
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const SizedBox(
+                  SizedBox(
                     width: 30,
                   ),
-                  const CircleAvatar(
+                  CircleAvatar(
                     backgroundImage: AssetImage('assets/register.png'),
                   ),
                 ],
@@ -94,7 +95,7 @@ class _MyHomeState extends State<MyHome> {
               height: 30,
             ),
             const Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: Text(
                 'Places and Descriptions',
                 style: TextStyle(
@@ -106,7 +107,7 @@ class _MyHomeState extends State<MyHome> {
             ),
             const SizedBox(height: 10),
 
-            Container(
+            SizedBox(
               height: 200,
               child: FutureBuilder<QuerySnapshot>(
                 future: _placesReference.get(),
@@ -173,7 +174,7 @@ class _MyHomeState extends State<MyHome> {
               ),
             ),
             const SizedBox(height: 10),
-            Container(
+            SizedBox(
               height: 200,
               child: FutureBuilder<QuerySnapshot>(
                 future: _cultural.get(),
@@ -243,7 +244,7 @@ class _MyHomeState extends State<MyHome> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => MyHome()),
+                  MaterialPageRoute(builder: (context) => const MyHome()),
                 );
               },
             ),
@@ -253,7 +254,7 @@ class _MyHomeState extends State<MyHome> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Group()),
+                  MaterialPageRoute(builder: (context) => const Group()),
                 );
               },
             ),
@@ -265,34 +266,11 @@ class _MyHomeState extends State<MyHome> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Capture()),
+                  MaterialPageRoute(builder: (context) => const Capture()),
                 );
               },
             ),
           ],
-        ),
-      ),
-    );
-  }
-
-  Widget _buildGroupItem(String imagePath, String title) {
-    return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 6),
-      height: 250,
-      width: 200,
-      child: Expanded(
-        // Adjust the height as needed
-        child: SingleChildScrollView(
-          scrollDirection: Axis.vertical,
-          child: Column(
-            children: [
-              Image.asset(imagePath),
-              Text(
-                title,
-                style: const TextStyle(fontSize: 16, color: Colors.white),
-              ),
-            ],
-          ),
         ),
       ),
     );

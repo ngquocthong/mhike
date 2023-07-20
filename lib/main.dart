@@ -14,7 +14,7 @@ void main() async {
     routes: {
       'login': (context) => const MyLogin(),
       'register': (context) => const MyRegister(),
-      'home': (context) => MyHome(),
+      'home': (context) => const MyHome(),
     },
   ));
 }

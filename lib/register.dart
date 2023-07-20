@@ -17,7 +17,7 @@ class MyRegister extends StatelessWidget {
         body: Stack(
           children: [
             Container(
-              padding: EdgeInsets.only(left: 35, top: 130),
+              padding: const EdgeInsets.only(left: 35, top: 130),
               child: const Text(
                 "SIGN UP",
                 style: TextStyle(color: Colors.white, fontSize: 30),
@@ -98,16 +98,16 @@ class MyRegister extends StatelessWidget {
                           // print('The account already exists for that email.');
                         }
                       } catch (e) {
-                        print(e);
+                        //print(e);
                       }
                     },
-                    child: Text('SIGN UP'),
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.blue,
                         padding: const EdgeInsets.symmetric(
                             horizontal: 50, vertical: 10),
                         textStyle: const TextStyle(
                             fontSize: 20, fontWeight: FontWeight.bold)),
+                    child: const Text('SIGN UP'),
                   ),
                   const SizedBox(
                     height: 20,
@@ -120,13 +120,13 @@ class MyRegister extends StatelessWidget {
                     onPressed: () {
                       Navigator.pushNamed(context, 'login');
                     },
-                    child: Text('SIGN IN'),
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.blue,
                         padding: const EdgeInsets.symmetric(
                             horizontal: 50, vertical: 10),
                         textStyle: const TextStyle(
                             fontSize: 20, fontWeight: FontWeight.bold)),
+                    child: const Text('SIGN IN'),
                   ),
                 ]),
               ),
