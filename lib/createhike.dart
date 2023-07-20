@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:open_street_map_search_and_pick/open_street_map_search_and_pick.dart';
 
 class CreateHike extends StatefulWidget {
+  // ignore: use_key_in_widget_constructors
   const CreateHike({Key? key});
 
   @override
@@ -153,7 +154,7 @@ class _CreateHikeState extends State<CreateHike> {
 
   Future<void> _submitData() async {
     if (startLocation == null || endLocation == null || date == null) {
-      print('Please fill all the fields');
+      //print('Please fill all the fields');
       return;
     }
 
@@ -166,7 +167,7 @@ class _CreateHikeState extends State<CreateHike> {
       // Data saved successfully, show success message or navigate to the next screen
     } catch (error) {
       // Handle error, show error message or retry logic
-      print('Error saving data: $error');
+      // print('Error saving data: $error');
     }
   }
 }

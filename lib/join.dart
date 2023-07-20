@@ -84,7 +84,8 @@ class _JoinState extends State<Join> {
                 child: ListTile(
                   title: Text(
                     'Start Location: $startLocation',
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    style: const TextStyle(
+                        fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                   subtitle: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,

@@ -107,7 +107,7 @@ class _MyHomeState extends State<MyHome> {
             ),
             const SizedBox(height: 10),
 
-            Container(
+            SizedBox(
               height: 200,
               child: FutureBuilder<QuerySnapshot>(
                 future: _placesReference.get(),
@@ -174,7 +174,7 @@ class _MyHomeState extends State<MyHome> {
               ),
             ),
             const SizedBox(height: 10),
-            Container(
+            SizedBox(
               height: 200,
               child: FutureBuilder<QuerySnapshot>(
                 future: _cultural.get(),

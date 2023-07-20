@@ -98,7 +98,7 @@ class MyRegister extends StatelessWidget {
                           // print('The account already exists for that email.');
                         }
                       } catch (e) {
-                        print(e);
+                        //print(e);
                       }
                     },
                     style: ElevatedButton.styleFrom(

@@ -53,7 +53,7 @@ class _CaptureState extends State<Capture> {
                   ImagePicker imagePicker = ImagePicker();
                   XFile? file =
                       await imagePicker.pickImage(source: ImageSource.camera);
-                  print('${file?.path}');
+                  //print('${file?.path}');
                   if (file == null) return;
 
                   // Create unique file name
@@ -71,13 +71,14 @@ class _CaptureState extends State<Capture> {
                     content: Text(
                         'Description and Image added successfully\n\t\t\t\tNow Press Submit Button'),
                   );
+                  // ignore: use_build_context_synchronously
                   ScaffoldMessenger.of(context).showSnackBar(snackBar);
                   try {
                     // Store the file
                     await referenceImageToUpload.putFile(File(file.path));
                     imageUrl = await referenceImageToUpload.getDownloadURL();
                   } catch (error) {
-                    print(error);
+                    // print(error);
                   }
                 },
               ),

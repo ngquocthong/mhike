@@ -12,6 +12,7 @@ class MyLogin extends StatefulWidget {
 }
 
 class _MyLoginState extends State<MyLogin> {
+  // ignore: unused_element
   Future<FirebaseApp> _initializeFirebase() async {
     FirebaseApp firebaseApp = await Firebase.initializeApp();
     return firebaseApp;
@@ -19,6 +20,7 @@ class _MyLoginState extends State<MyLogin> {
   //final FirebaseAuth _auth = FirebaseAuth.instance;
 
   // Function to handle sign in
+  // ignore: unused_element
   static Future<User?> _signInWithEmailAndPassword(
       {required String email,
       required String password,
@@ -34,13 +36,13 @@ class _MyLoginState extends State<MyLogin> {
       user = userCredential.user;
     } on FirebaseAuthException catch (e) {
       if (e.code == "user-not-found") {
-        print("No User found for that email");
+        // print("No User found for that email");
       } else if (e.code == "wrong-password") {
-        print("Wrong password provided for that user");
+        //print("Wrong password provided for that user");
       } else if (e.code == "invalid-email") {
-        print("Invalid email address");
+        //print("Invalid email address");
       } else {
-        print(e.code);
+        //print(e.code);
       }
       // Handle sign in error here
     }
@@ -124,13 +126,13 @@ class _MyLoginState extends State<MyLogin> {
                         }
                       }
                     },
-                    child: Text('SIGN IN'),
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.blue,
                         padding: const EdgeInsets.symmetric(
                             horizontal: 50, vertical: 10),
                         textStyle: const TextStyle(
                             fontSize: 20, fontWeight: FontWeight.bold)),
+                    child: const Text('SIGN IN'),
                   ),
                   const SizedBox(
                     height: 20,

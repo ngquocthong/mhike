@@ -8,7 +8,7 @@ class Description extends StatelessWidget {
   final String placeName;
   final String description;
 
-  Description({
+  const Description({
     Key? key,
     required this.imageUrl,
     required this.placeName,
@@ -19,7 +19,7 @@ class Description extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Description"),
+        title: const Text("Description"),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -57,7 +57,7 @@ class Description extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => MyHome()),
+                  MaterialPageRoute(builder: (context) => const MyHome()),
                 );
               },
             ),
@@ -67,7 +67,7 @@ class Description extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Group()),
+                  MaterialPageRoute(builder: (context) => const Group()),
                 );
               },
             ),
@@ -79,7 +79,7 @@ class Description extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Capture()),
+                  MaterialPageRoute(builder: (context) => const Capture()),
                 );
               },
             ),
