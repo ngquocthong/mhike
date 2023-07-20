@@ -6,7 +6,7 @@ import 'package:trips1/group.dart'; // Import the 'Group' widget
 void main() {
   testWidgets('Test Group widget', (WidgetTester tester) async {
     // Build the 'Group' widget and trigger a frame.
-    await tester.pumpWidget(MaterialApp(home: Group()));
+    await tester.pumpWidget(const MaterialApp(home: Group()));
 
     // Verify that the 'Group' widget is displayed correctly with its children widgets.
 
