@@ -56,7 +56,7 @@ class _GroupState extends State<Group> {
               child: Center(
                 child: OpenStreetMapSearchAndPick(
                   center: LatLong(23, 89),
-                  buttonColor: Colors.blue,
+                  buttonColor: Colors.yellow,
                   buttonText: 'Set Current Location',
                   onPicked: (pickedData) {
                     // print(pickedData.latLong.latitude);
