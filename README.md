@@ -5,7 +5,7 @@ TripItOn is a Flutter application that allows users to create and join hikes, sh
 
 <h4>Create Hike:</h4> Users can create a hike by specifying the start and end locations, along with the date and time. The selected locations can be picked directly from the map, making it convenient and accurate.<br>
 
-<h4>Join Hike (Under Development):</h4> The join hike feature is currently in development. Stay tuned for future updates!<br>
+<h4>Join Hike:</h4>Here all the hikes are listed down, so that the users can join for whatever hike they want to join. In this more features such as notification are currently under development. Stay tuned for future updates!<br>
 
 <h4>Image Upload and Description:</h4> Users can upload images from their gallery or capture new ones using the camera. The images are stored in Firebase storage, and users can provide descriptions of the places or experiences associated with the images.<br>
 
