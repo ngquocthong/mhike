@@ -32,9 +32,12 @@ class _MyLoginState extends State<MyLogin> {
         email: email,
         password: password,
       );
+      print("Scuess login");
       // Handle successful sign in here
       user = userCredential.user;
     } on FirebaseAuthException catch (e) {
+      print("Faild login");
+      print(e);
       if (e.code == "user-not-found") {
         // print("No User found for that email");
       } else if (e.code == "wrong-password") {
@@ -108,10 +111,11 @@ class _MyLoginState extends State<MyLogin> {
                         UserCredential userCredential = await FirebaseAuth
                             .instance
                             .signInWithEmailAndPassword(
-                                email: email, password: pass);
+                                email: "thongnguyennqt@gmail.com", password: "Tkcuatui1107");
                         // ignore: use_build_context_synchronously
                         Navigator.pushNamed(context, 'home');
                       } on FirebaseAuthException catch (e) {
+                        print(e);
                         if (e.code == 'user-not-found') {
                           SnackBar snackBar = const SnackBar(
                             content: Text('No User found for that email.'),

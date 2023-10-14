@@ -76,10 +76,13 @@ class MyRegister extends StatelessWidget {
                         UserCredential userCredential = await FirebaseAuth
                             .instance
                             .createUserWithEmailAndPassword(
-                                email: email, password: pass);
+                                email: "thongnguyennqt@gmail.com", password: "Tkcuatui1107");
                         // ignore: use_build_context_synchronously
+
                         Navigator.pushNamed(context, 'login');
                       } on FirebaseAuthException catch (e) {
+                        print("email.");
+                        print(e);
                         if (e.code == 'weak-password') {
                           //display a snackbar
                           SnackBar snackBar = const SnackBar(
@@ -95,7 +98,7 @@ class MyRegister extends StatelessWidget {
                                 'The account already exists for that email.'),
                           );
                           ScaffoldMessenger.of(context).showSnackBar(snackBar);
-                          // print('The account already exists for that email.');
+                           print('The account already exists for that email.');
                         }
                       } catch (e) {
                         //print(e);
